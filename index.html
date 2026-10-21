@@ -24,8 +24,8 @@
     .hours { margin:18px 0 6px; font-weight:700; }
     .email { color:var(--muted); font-size:14px; overflow-wrap:anywhere; }
 
-    .linkedin-link { display:inline-flex; align-items:center; gap:7px; margin-top:12px; color:#0A66C2; text-decoration:none; font-weight:700; font-size:14px; }
-    .linkedin-link:hover { text-decoration:underline; }
+    .linkedin-link { display:inline-flex; align-items:center; justify-content:center; gap:8px; margin-top:10px; padding:10px 18px; border-radius:10px; background:#0A66C2; color:white; text-decoration:none; font-weight:700; font-size:15px; }
+    .linkedin-link:hover { filter:brightness(.94); }
     .linkedin-icon { width:18px; height:18px; display:block; }
     button { margin-top:16px; border:0; border-radius:10px; padding:12px 18px; font-size:16px; font-weight:700; cursor:pointer; background:var(--ink); color:white; }
     .status { height:22px; margin-top:9px; font-size:14px; color:var(--muted); }
@@ -48,13 +48,13 @@
         <div class="role">Student Senator &amp; Business School Ambassador</div>
         <div class="hours">Tuesday · 9:00 AM–12:30 PM</div>
         <div class="email">cdeazev1@slcc.edu</div>
+        <button onclick="copyEmail('cdeazev1@slcc.edu','carlos-status')">Copy Email</button>
         <a class="linkedin-link" href="https://www.linkedin.com/in/cfcastilho/" target="_blank" rel="noopener noreferrer" aria-label="Carlos Castilho on LinkedIn">
           <svg class="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true">
             <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.1 20.45H3.54V8.98H7.1v11.47Z"/>
           </svg>
           LinkedIn
         </a>
-        <button onclick="copyEmail('cdeazev1@slcc.edu','carlos-status')">Copy Email</button>
         <div class="status" id="carlos-status" aria-live="polite"></div>
       </article>
 
